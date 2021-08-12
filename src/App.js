@@ -1,20 +1,23 @@
-//import './App.scss';
-import UserFeed from './components/feed/UserFeed.js';
+import { Route, Switch, Redirect } from "react-router-dom";
+import Auth from "./components/auth/Auth";
+import Test from "./pages/Test";
+import MainLayout from "./components/layout/MainLayout";
 
 function App() {
   return (
-    <div className="App">
-      <UserFeed />
-
-      {/* Mobile nav bar rendered here */}
-      {/* Fake Nav - this should be it's own component */}
-      <div className='mobile-nav'>
-          <img alt='home-icon'/>
-          <img alt='search-icon'/>
-          <img alt='notifications-icon'/>
-          <img alt='messages-icon'/>
-      </div>
-    </div>
+    <Switch>
+      <Route path="/" exact>
+        <Redirect to="/auth" />
+      </Route>
+      <Route path="/auth">
+        <Auth />
+      </Route>
+      <MainLayout>
+        <Route path="/home">
+          <Test /> {/* <Feed /> when ready  */}
+        </Route>
+      </MainLayout>
+    </Switch>
   );
 }
 
