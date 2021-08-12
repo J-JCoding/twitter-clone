@@ -1,5 +1,5 @@
 import React from 'react';
-import { nasaImg, examplePost } from './../dummydata';
+import { nasaImg, examplePost } from '../../dummydata';
 
 function UserFeed () {
     return (
@@ -24,17 +24,9 @@ function UserFeed () {
                         <p>{examplePost.postContent}</p>
                     </div>
                 </div>
+                
             </div>
 
-
-            {/* Mobile nav bar rendered here */}
-            {/* Fake Nav - this should be it's own component */}
-            <div className='mobile-nav'>
-                <img alt='home-icon'/>
-                <img alt='search-icon'/>
-                <img alt='notifications-icon'/>
-                <img alt='messages-icon'/>
-            </div>
         </div>
     )
 }
