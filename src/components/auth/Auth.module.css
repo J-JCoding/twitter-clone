@@ -1,0 +1,102 @@
+.auth {
+  height: 100vh;
+  width: 100vw;
+}
+
+.auth__attention {
+  height: 40%;
+  background-color: #1da1f2;
+  position: relative;
+}
+
+.auth__attention--border {
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth__attention--logo {
+  width: 85%;
+  padding: 1rem;
+}
+
+/* User info */
+.user-info {
+  height: 60%;
+}
+
+.user-info__inputs {
+  height: 60%;
+  background-color: #1da1f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info__access {
+  display: flex;
+  align-items: center;
+  padding: 1.75rem;
+  border-radius: 100rem;
+  background-color: #fff;
+  width: 80%;
+  margin: 0.75rem auto;
+}
+
+.user-info__access input {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  font-size: 1.55rem;
+}
+
+.user-info__button--container {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info__button--container p {
+  font-size: 1.35rem;
+  margin: 1rem auto;
+}
+
+.user-info__inputs p {
+  margin: 1.5rem auto;
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #1da1f2;
+}
+
+.btn-border {
+  border: 2px solid #1da1f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  background: none;
+  outline: none;
+}
+
+.user-info__sign-up {
+  color: #1da1f2;
+  cursor: pointer;
+  font-weight: 500;
+}

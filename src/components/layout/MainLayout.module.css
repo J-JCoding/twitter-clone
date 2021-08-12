@@ -1,0 +1,11 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__content {
+  height: 93vh;
+  background: #141d26;
+}
