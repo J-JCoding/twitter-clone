@@ -1,9 +1,23 @@
 // THIS COMPONENT SHOULD BE DELETED WHEN FEED IS FINISHED
 
-import React from "react";
+import classes from "./Test.module.css";
 
 function Test() {
-  return <h1 style={{ color: "white" }}>Hello world!</h1>;
+  return (
+    <div className={classes.test}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
 }
 
 export default Test;

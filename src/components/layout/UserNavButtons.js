@@ -1,23 +1,22 @@
-import { Fragment } from "react";
-
+import { NavLink } from "react-router-dom";
 import classes from "./UserNavButtons.module.css";
 
 const UserNavButtons = () => {
   return (
-    <Fragment>
-      <button className={classes.button}>
-        <i className="fas fa-home" id={classes.active}></i>
-      </button>
-      <button className={classes.button}>
+    <div className={classes["nav-links"]}>
+      <NavLink to="/main/feed" activeClassName={classes.active}>
+        <i className="fas fa-home"></i>
+      </NavLink>
+      <NavLink to="/main/search" activeClassName={classes.active}>
         <i className="fas fa-search"></i>
-      </button>
-      <button className={classes.button}>
+      </NavLink>
+      <NavLink to="/main/notifications" activeClassName={classes.active}>
         <i className="fas fa-bell"></i>
-      </button>
-      <button className={classes.button}>
+      </NavLink>
+      <NavLink to="/main/messages" activeClassName={classes.active}>
         <i className="fas fa-envelope"></i>
-      </button>
-    </Fragment>
+      </NavLink>
+    </div>
   );
 };
 

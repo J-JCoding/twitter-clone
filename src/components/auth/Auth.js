@@ -70,7 +70,7 @@ const Auth = () => {
       })
       .then((data) => {
         console.log(data);
-        history.replace("/home");
+        history.replace("/main/feed");
       })
       .catch((err) => {
         alert(err);
