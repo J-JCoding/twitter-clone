@@ -1,4 +1,8 @@
 .nav {
   height: 7vh;
+  width: 100%;
   background: #243447;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
