@@ -27,20 +27,31 @@
   height: 100%;
 }
 
-.header__logo {
-  height: 3rem;
-  width: 3rem;
+.header__content {
+  flex: 1;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
 }
 
-.header__logo--img {
-  width: 100%;
+.header__content--img {
+  height: 100%;
+}
+
+.remove {
+  display: none;
+}
+
+.header__settings {
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__settings--icon {
