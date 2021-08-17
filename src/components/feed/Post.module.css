@@ -1,20 +1,21 @@
 .post-container {
     display: flex;
-    margin: 1.75rem;
     color: white;
-    border-bottom: 0px solid black;
+    font-size: 1.4rem;
+    border-bottom: .15px solid rgba(153, 153, 153, 0.2);
+    padding: 1.25rem;
 }
 
 .pfp-container {
-    height: 3.5rem;
-    width: 35%;
+    height: 3.85rem;
+    width: 3.85rem;
     border-radius: 50%;
     border: 2px solid #e0e0e0;
     overflow: hidden;
     margin-right: 1rem;
   }
   
-  .pfp-container img {
+.pfp-container img {
     height: 100%;
     width: 100%;
   }
@@ -22,6 +23,7 @@
 .post-content {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
 }
 
 .post-interaction {
@@ -30,4 +32,17 @@
     width: 90%;
     margin-top: 5%;
     justify-content: space-between;
+}
+
+.user-post-info {
+    font-weight: 500;
+}
+
+.user-post-handle {
+    color: #999;
+    font-weight: 300;
+}
+
+.post-icon {
+    color: #999;
 }
