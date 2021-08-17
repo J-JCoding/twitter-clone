@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from 'react';
 import classes from "./Post.module.css";
 import pfp from "../../img/test-pfp.jpg";
-import { examplePost } from '../../dummydata';
+import { examplePost, nasaImg } from '../../dummydata';
 import { Link } from 'react-router-dom';
 
 const interactionReducer = (state, action) => {
@@ -27,7 +27,7 @@ function Post (props) {
     return (
         <div className={classes['post-container']}>
             <div className={classes['pfp-container']}>
-                <img src={pfp} alt='user profile' />
+                <img src={nasaImg} alt='user profile' />
             </div>
 
             <div className={classes['post-content']}>
