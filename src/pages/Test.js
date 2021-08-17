@@ -1,7 +1,8 @@
 // THIS COMPONENT SHOULD BE DELETED WHEN FEED IS FINISHED
 
-import classes from "./Test.module.css";
+//import classes from "./Test.module.css";
 import { useEffect } from "react";
+import Post from '../components/feed/Post';
 
 function Test(props) {
   useEffect(() => {
@@ -9,18 +10,19 @@ function Test(props) {
   }, []);
 
   return (
-    <div className={classes.test}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    // <div className={classes.test}>
+    <div>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 }

@@ -1,0 +1,33 @@
+.post-container {
+    display: flex;
+    margin: 1.75rem;
+    color: white;
+    border-bottom: 0px solid black;
+}
+
+.pfp-container {
+    height: 3.5rem;
+    width: 35%;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+  
+  .pfp-container img {
+    height: 100%;
+    width: 100%;
+  }
+
+.post-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-interaction {
+    display: flex;
+    align-self: flex-end;
+    width: 90%;
+    margin-top: 5%;
+    justify-content: space-between;
+}
