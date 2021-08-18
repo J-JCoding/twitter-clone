@@ -4,14 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
 }
 
 .main__content {
   height: 85vh;
   width: 100%;
   background: #141d26;
-  position: fixed;
+  position: relative;
   overflow: scroll;
   top: 8vh;
   left: 0;

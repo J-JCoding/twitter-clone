@@ -1,0 +1,38 @@
+.article {
+  padding: 1.35rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article h3 {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.article span {
+  color: #999;
+  font-weight: 400;
+  margin-left: 0.35rem;
+}
+
+.article p {
+  line-height: 1.4;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 0.75rem;
+}
+
+.container {
+  height: 6rem;
+  min-width: 6rem;
+  max-width: 6rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container img {
+  height: 100%;
+  object-fit: contain;
+}
