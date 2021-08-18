@@ -1,0 +1,22 @@
+.compose-tweet__container {
+  height: 6.5rem;
+  width: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  background: #1da1f2;
+  bottom: 10vh;
+  right: 2.25rem;
+}
+
+.compose-tweet__container {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.compose-tweet__container p {
+  margin-bottom: 1.25rem;
+  margin-right: -0.25rem;
+}
