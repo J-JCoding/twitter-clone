@@ -1,22 +1,46 @@
-.compose-tweet__container {
-  height: 6.5rem;
-  width: 6.5rem;
+.compose-tweet__btn {
+  height: 5.75rem;
+  width: 5.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  border: none;
   position: fixed;
   background: #1da1f2;
   bottom: 10vh;
   right: 2.25rem;
-}
-
-.compose-tweet__container {
+  outline: none;
   font-size: 2.4rem;
   color: #fff;
 }
 
-.compose-tweet__container p {
+.compose-tweet__btn p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.compose-tweet {
   margin-bottom: 1.25rem;
   margin-right: -0.25rem;
+}
+
+.compose-message {
+  position: relative;
+  font-weight: 300;
+}
+
+.compose-message p {
+  position: absolute;
+  top: -0.75rem;
+  right: -0.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1da1f2;
+  font-weight: 700;
 }

@@ -2,12 +2,17 @@
 
 //import classes from "./Test.module.css";
 import { useEffect } from "react";
-import Post from '../components/feed/Post';
+import { useDispatch } from "react-redux";
+import { uiActions } from "../store/ui-state";
+
+import Post from "../components/feed/Post";
 
 function Test(props) {
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    props.setPage("Feed");
-  }, []);
+    dispatch(uiActions.setCurPage("Feed"));
+  }, [dispatch]);
 
   return (
     // <div className={classes.test}>
