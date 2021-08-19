@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import Post from '../components/feed/Post';
-import {examplePost, exampleArrayOfPosts} from '../dummydata';
+import { exampleArrayOfPosts } from '../dummydata';
+import { useDispatch } from 'react-redux';
+import { uiActions } from '../store/ui-state';
 
 function Feed(props) {
     const [posts, setPosts] = useState(exampleArrayOfPosts) //[{post}, {post2}]
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        props.setPage("Feed");
-        //API call to fetch posts / setPosts here
-    }, [posts]);
+        dispatch(uiActions.setCurPage("Feed"));
+      }, [dispatch]);
 
     function updatePost(e, post) {
         const postsCopy = [...posts]; //Make a copy of all the posts
@@ -28,7 +30,7 @@ function Feed(props) {
     return (
     // <div className={classes.test}>
     <div>
-        {posts.length > 0 ? posts.map((post) => <Post key={post.id} post={post} updatePost={updatePost}/>) : <h2>Loading ...</h2>} 
+        {posts.length > 0 ? posts.map((post) => <Post key={post.postId} post={post} updatePost={updatePost}/>) : <h2>Loading ...</h2>} 
     </div>
     );
 }

@@ -51,8 +51,6 @@ function Post (props) {
 
             </div>
         </div>
-      </div>
-    </div>
   );
 }
 

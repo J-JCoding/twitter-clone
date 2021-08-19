@@ -1,5 +1,4 @@
 import classes from "./FilteredListItem.module.css";
-import pfp from "../../img/test-pfp.jpg";
 
 const FilteredListItem = (props) => {
   return (

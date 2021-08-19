@@ -7,8 +7,6 @@ import Notifications from "./pages/Notifications";
 import Messages from "./pages/Messages";
 import CreatePost from './components/feed/CreatePost';
 
-import Test from "./pages/Test";
-
 function App() {
   return (
     <Switch>
@@ -24,7 +22,7 @@ function App() {
       <Route path="/main">
         <MainLayout>
           <Route path="/main/feed">
-            <Feed setPage={currentPage} /> {/*setPage may need depractaed*/}
+            <Feed /> {/*setPage may need depractaed*/}
           </Route>
           <Route path="/main/search">
             <Search />
