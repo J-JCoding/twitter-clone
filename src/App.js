@@ -5,6 +5,7 @@ import Feed from "./pages/Feed";
 import Search from "./pages/Search";
 import Notifications from "./pages/Notifications";
 import Messages from "./pages/Messages";
+import CreatePost from './components/feed/CreatePost';
 
 import Test from "./pages/Test";
 
@@ -17,10 +18,13 @@ function App() {
       <Route path="/auth">
         <Auth />
       </Route>
+      <Route path="/create-post">
+        <CreatePost />
+      </Route>
       <Route path="/main">
         <MainLayout>
           <Route path="/main/feed">
-            <Test /> {/* <Feed /> when ready  */}
+            <Feed setPage={currentPage} /> {/*setPage may need depractaed*/}
           </Route>
           <Route path="/main/search">
             <Search />
