@@ -1,5 +1,4 @@
 import { Route, Switch, Redirect } from "react-router-dom";
-import { useState } from "react";
 import Auth from "./components/auth/Auth";
 import MainLayout from "./components/layout/MainLayout";
 import Feed from "./pages/Feed";
@@ -11,12 +10,6 @@ import CreatePost from './components/feed/CreatePost';
 import Test from "./pages/Test";
 
 function App() {
-  const [userPage, setUserPage] = useState("");
-
-  const currentPage = (page) => {
-    setUserPage(page);
-  };
-
   return (
     <Switch>
       <Route path="/" exact>
@@ -29,18 +22,18 @@ function App() {
         <CreatePost />
       </Route>
       <Route path="/main">
-        <MainLayout curPage={userPage}>
+        <MainLayout>
           <Route path="/main/feed">
-            <Feed setPage={currentPage} /> {/*<Test setPage={currentPage} />*/}
+            <Feed setPage={currentPage} /> {/*setPage may need depractaed*/}
           </Route>
           <Route path="/main/search">
-            <Search setPage={currentPage} />
+            <Search />
           </Route>
           <Route path="/main/notifications">
-            <Notifications setPage={currentPage} />
+            <Notifications />
           </Route>
           <Route path="/main/messages">
-            <Messages setPage={currentPage} />
+            <Messages />
           </Route>
         </MainLayout>
       </Route>

@@ -1,7 +1,5 @@
-import React, { useState, useReducer } from 'react';
+import React from "react";
 import classes from "./Post.module.css";
-import { examplePost, nasaImg } from '../../dummydata';
-import { Link } from 'react-router-dom';
 
 // const interactionReducer = (state, action) => {
 //     switch(action.type) {
@@ -53,7 +51,9 @@ function Post (props) {
 
             </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default Post;

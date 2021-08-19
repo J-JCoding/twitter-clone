@@ -15,6 +15,7 @@
 .header__pfp {
   height: 3rem;
   width: 3rem;
+  margin-left: 0.5rem;
   border-radius: 50%;
   border: 2px solid #e0e0e0;
   overflow: hidden;
@@ -38,6 +39,10 @@
   color: white;
 }
 
+.input-open {
+  justify-content: flex-start;
+}
+
 .header__content--img {
   height: 100%;
 }
@@ -52,6 +57,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500;
 }
 
 .header__settings--icon {

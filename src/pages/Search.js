@@ -1,11 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, Fragment } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { uiActions } from "../store/ui-state";
+
+import Trending from "../components/search/Trending";
+import FilteredList from "../components/search/FilteredList";
 
 const Search = (props) => {
-  useEffect(() => {
-    props.setPage("Search");
-  }, []);
+  const dispatch = useDispatch();
+  const inputOpen = useSelector((state) => state.ui.searchInput);
 
-  return <h1 style={{ color: "white" }}>Search page!</h1>;
+  useEffect(() => {
+    dispatch(uiActions.setCurPage("Search"));
+  }, [dispatch]);
+
+  return (
+    <Fragment>
+      {!inputOpen && <Trending />}
+      {inputOpen && <FilteredList />}
+    </Fragment>
+  );
 };
 
 export default Search;

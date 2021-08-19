@@ -1,9 +1,13 @@
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { uiActions } from "../store/ui-state";
 
 const Notifications = (props) => {
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    props.setPage("Notifications");
-  }, []);
+    dispatch(uiActions.setCurPage("Notifications"));
+  }, [dispatch]);
 
   return <h1 style={{ color: "white" }}>Notifications page!</h1>;
 };
