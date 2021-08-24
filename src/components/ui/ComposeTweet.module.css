@@ -44,3 +44,14 @@
   background: #1da1f2;
   font-weight: 700;
 }
+
+.compose-tweet__btn a,
+.compose-tweet__btn a:link,
+.compose-tweet__btn a:active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #e0e0e0;
+}

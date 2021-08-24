@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 import classes from "./ComposeTweet.module.css";
 
@@ -10,8 +11,10 @@ const ComposeTweet = () => {
     <button className={classes["compose-tweet__btn"]}>
       {page !== "Messages" && (
         <Fragment>
-          <p className={classes["compose-tweet"]}>+</p>
-          <i className="fas fa-feather-alt"></i>
+          <NavLink to="/create-post" className={classes['nav-links']}>
+            <p className={classes["compose-tweet"]}>+</p>
+            <i className="fas fa-feather-alt"></i>
+          </NavLink>
         </Fragment>
       )}
       {page === "Messages" && (

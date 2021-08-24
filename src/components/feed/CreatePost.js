@@ -13,20 +13,25 @@ function CreatePost(props) {
 
     return (
         <div className={classes['create-post-container']}>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            
             <div className={classes['test']}>
                 <div className={classes['pfp-container']}>
                     <img src={ pfp } alt='user profile' />
                 </div>
                 
                 <div className={classes['text-area-container']}>
-                    <textarea placeholder="What's happening?" value={postContent.postContent} onChange={handleChange} maxLength='140' rows='7' cols='25' className={classes['text-area']} id='text-area'/>
+                    <textarea placeholder="What's happening?" value={postContent.postContent} onChange={handleChange} maxLength='280' rows='7' cols='25' className={classes['text-area']} id='text-area'/>
                 </div>
 
                 <div className={classes['icon-container']}>
-                    <p><i class="far fa-image"></i></p>
-                    <p><i class="fas fa-film"></i></p>
-                    <p><i class="far fa-chart-bar"></i></p>
-                    <p><i class="far fa-calendar"></i></p>
+                    <p><i className="far fa-image"></i></p>
+                    <p><i className="fas fa-film"></i></p>
+                    <p><i className="far fa-chart-bar"></i></p>
+                    <p><i className="far fa-calendar"></i></p>
                 </div>
             </div>
         </div>
