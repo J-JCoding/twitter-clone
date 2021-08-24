@@ -6,7 +6,8 @@ import { NavLink } from 'react-router-dom';
 
 function CreatePost(props) {
     const [postContent, setContent] = useState({
-        postContent: ''
+        postContent: '',
+        charCount: 0,
     })
 
     const [isPosting, setIsPosting] = useState(false);
@@ -14,7 +15,7 @@ function CreatePost(props) {
     //Acess post store / add posts and dummy data to state to actually add post to store when one is created
 
     function handleChange(e) {
-        setContent({...postContent, postContent: e.target.value})
+        setContent({...postContent, postContent: e.target.value, charCount: e.target.value.length})
 
         if(e.target.value) {
             setIsPosting(true);
@@ -49,6 +50,7 @@ function CreatePost(props) {
                         <p><i className="fas fa-film"></i></p>
                         <p><i className="far fa-chart-bar"></i></p>
                         <p><i className="far fa-calendar"></i></p>
+                        <p className={classes['char-counter']}>{postContent.charCount} / 280</p>
                     </div>
                 </div>
             </div>
