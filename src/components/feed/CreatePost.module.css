@@ -1,17 +1,53 @@
 .create-post-container {
-    display: flex;
-    padding: 5%;
-    border-top:.15px solid rgba(153, 153, 153, 0.2);
-    flex-wrap: wrap;
     background: #243447;
-    width: 100%;
     min-height: 100vh;
 }
 
+
+
+.create-post-nav {
+    display: flex;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+    height: 7vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-post-nav button {
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    margin-right: 4%;
+    padding: 2%;
+}
+
+.active {
+    color: rgb(231,245,254);
+    background-color: rgb(29,161,242);
+}
+
+.inactive {
+    color: rgb(138,143,149);
+    background-color: rgb(25,96,142);
+}
+
+.create-post-nav p {
+    margin-left: 4%;
+}
+
+.create-post-nav i, a {
+    font-size: 1.75rem; 
+    color: white;
+}
+
+
+
 .test {
-    height: 50%;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 4%;
 }
 
 .pfp-container {
@@ -35,6 +71,8 @@
     margin-bottom: 0;
 }
 
+
+
 .text-area-container textarea {
     background: #243447;
     border: none;
@@ -50,6 +88,8 @@ textarea::placeholder {
     color: rgb(136,153,166);
     font-weight: lighter;
 }
+
+
 
 .icon-container {
     display: flex;
