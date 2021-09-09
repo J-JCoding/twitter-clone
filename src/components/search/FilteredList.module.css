@@ -8,3 +8,9 @@
   text-align: center;
   margin-top: 2rem;
 }
+
+.list a:link,
+.list a:visited,
+.list a:active {
+  text-decoration: none;
+}

@@ -11,7 +11,7 @@ const Search = (props) => {
 
   useEffect(() => {
     dispatch(uiActions.setCurPage("Search"));
-  }, [dispatch]);
+  }, [dispatch, props]);
 
   return (
     <Fragment>

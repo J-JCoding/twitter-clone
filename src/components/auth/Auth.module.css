@@ -66,6 +66,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #fff;
 }
 
 .user-info__button--container p {

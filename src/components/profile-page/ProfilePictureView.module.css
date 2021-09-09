@@ -1,0 +1,34 @@
+.enlarged-pfp {
+  background: #243447;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlarged-pfp div {
+  height: 32rem;
+  width: 32rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.enlarged-pfp img {
+  height: 100%;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 2.8rem;
+}

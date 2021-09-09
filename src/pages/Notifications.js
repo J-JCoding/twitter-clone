@@ -7,7 +7,7 @@ const Notifications = (props) => {
 
   useEffect(() => {
     dispatch(uiActions.setCurPage("Notifications"));
-  }, [dispatch]);
+  }, [dispatch, props]);
 
   return <h1 style={{ color: "white" }}>Notifications page!</h1>;
 };
