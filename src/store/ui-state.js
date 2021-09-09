@@ -5,6 +5,7 @@ const uiState = createSlice({
   initialState: {
     searchInput: false,
     curPage: "",
+    localId: "vim3jQlfiNO4XPUUrhWi9Gx25LW2",
   },
   reducers: {
     // Toggling the input state on the search page
@@ -18,6 +19,11 @@ const uiState = createSlice({
     // State for changing the header based on the users page
     setCurPage(state, action) {
       state.curPage = action.payload;
+    },
+
+    // Setting localId for user upon logging in or creating account
+    setLocalId(state, action) {
+      state.localId = action.payload;
     },
   },
 });

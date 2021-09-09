@@ -7,7 +7,7 @@ const Messages = (props) => {
 
   useEffect(() => {
     dispatch(uiActions.setCurPage("Messages"));
-  }, [dispatch]);
+  }, [dispatch, props]);
 
   return <h1 style={{ color: "white" }}>Messages page!</h1>;
 };

@@ -1,6 +1,7 @@
 import FilteredListItem from "./FilteredListItem";
 import classes from "./FilteredList.module.css";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const FilteredList = () => {
   const users = useSelector((state) => state.users.users);
@@ -14,12 +15,14 @@ const FilteredList = () => {
       )}
       {users.length > 0 &&
         users.map((user) => (
-          <FilteredListItem
-            key={Math.random()} // Poor key will need to make better one later
-            name={user.name}
-            handle={user.handle}
-            img={user.img}
-          />
+          <Link to={`/profile/${user.id}/tweets`} key={user.id}>
+            <FilteredListItem
+              id={user.id}
+              name={user.name}
+              handle={user.handle}
+              img={user.img}
+            />
+          </Link>
         ))}
     </ul>
   );

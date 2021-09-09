@@ -1,5 +1,7 @@
 import { useState, useRef, Fragment, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+// import { useDispatch } from "react-redux";
+// import { uiActions } from "../../store/ui-state";
 
 import LoadingSpinner from "../ui/LoadingSpinner";
 
@@ -7,6 +9,7 @@ import logo from "../../img/twitter-logo.png";
 import classes from "./Auth.module.css";
 
 const Auth = () => {
+  // const dispatch = useDispatch();
   const history = useHistory();
 
   const [authLogin, setAuthLogin] = useState(true);
@@ -69,8 +72,12 @@ const Auth = () => {
         }
       })
       .then((data) => {
-        console.log(data);
-        history.replace("/main/feed");
+        // dispatch(uiActions.setLocalId(data.localId)); will need set once we have accounts being created in the database
+        if (authLogin) {
+          history.replace("/main/feed"); // will need to be dynamically routed to users personal feed later
+        } else {
+          history.replace("/lets-get-started"); // if new account is being created user will be redirected to this page
+        }
       })
       .catch((err) => {
         alert(err);
